@@ -1,0 +1,254 @@
+//Variables
+$heroColor: #2E3192;
+$fancyDidot: 'Didot', Georgia, serif;
+
+//Mixins
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+//Styles
+body{
+    background-color: #EAEAEA;
+    color: $heroColor;
+    @include flex;
+    font-family: $fancyDidot;
+    font-weight: bold;
+    position: relative;
+}
+.flex{
+    @include flex;
+}
+html.sr{
+    visibility: hidden;
+}
+
+
+
+//Text
+h1, h2, h3, h4, h5, h6{
+    font-family: $fancyDidot;
+    font-weight: bold;
+}
+h1{
+    font-size: 8vw;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+h2{ //captions
+    font-size: 3vw;
+    margin-top: 2%;
+}
+.iconCaption{
+    margin-top: 0;
+}
+h3{ //dates
+    font-size: 2vw;
+    margin: 1% 0% 1% 0%;
+}
+.iconDate{
+    margin-bottom: 2%;
+}
+#subtitle{
+    margin-top: 15%;
+    font-size: 3vw;
+}
+.description{
+    margin: 1% 0% -2% 0%;
+    font-size: 1.5vw;
+    line-height: 1.3em;
+    text-align: center;
+    max-width: 60%;
+}
+.iconDescription{
+    margin: 2% 0% 2% 0%;
+    font-size: 1.5vw;
+    line-height: 1.3em;
+    text-align: center;
+    max-width: 60%;
+}
+#end{
+    margin-bottom: 2%;
+}
+#last{
+    margin-bottom: 17%;
+    max-width: 90%;
+    text-align: center;
+    line-height: 1.3em;
+}
+
+
+
+//Images
+img{
+    max-width: 70%;
+}
+.closeBrackets{
+    transform: rotate(180deg);
+}
+.frames{
+    max-width: 50%;
+}
+#swirl{
+    max-width: 30%;
+    margin-bottom: 5%;
+}
+#newswirl{
+    max-width: 30%;
+    margin-bottom: 1%;
+}
+.bottomAnchor{
+    position: relative;
+    top: -10px;
+}
+.topAnchor{
+    position: relative;
+    bottom: -10px;
+}
+.corner{
+    position: fixed;
+    max-height: 20vh;
+    max-width: 20vw;
+}
+.tl{
+    top: 1%;
+    left: 1%;
+}
+.tr{
+    top: 1%;
+    right: 1%;
+}
+.bl{
+    bottom: 1%;
+    left: 1%;
+}
+.br{
+    bottom: 1%;
+    right: 1%;
+}
+.bar{
+    position: absolute;
+}
+.sidebar{
+    position: fixed;
+}
+.top{
+    top: 10px;
+    max-width: 70vw;
+}
+.bottom{
+    bottom: 10px;
+    max-width: 70vw;
+}
+.leftSide{
+    left: 1%;
+    top: 25vh;
+    height: 50vh;
+}
+.rightSide{
+    right: 1%;
+    top: 25vh;
+    height: 50vh;
+}
+.icon{
+    max-width: 30%;
+}
+.picture{
+    position: relative;
+    @include flex;
+}
+.pic{
+    position: absolute;
+    max-width: 50%;
+}
+.hidden{
+    visibility: hidden;
+}
+.car{
+    margin-bottom: -5%;
+    margin-top: -3%;
+}
+.lastone{
+    margin-bottom: 15%;
+}
+.toobig{
+    margin-bottom: -5%;
+    margin-top: -5%;
+}
+
+
+
+//Media Queries
+@media screen and (max-width: 1100px){
+    .top, .bottom{
+        max-width: 60vw;
+    }  
+}
+@media screen and (max-width: 750px){
+    .top, .bottom{
+        max-width: 45vw;
+    }
+    .top{
+        top: 5px; 
+    }
+    .bottom{
+        bottom: 5px; 
+    }
+    .bottomAnchor{
+        top: -5px;
+    }
+    .topAnchor{
+        bottom: -5px;
+    }
+    h1{
+        font-size: 220%;
+    }
+    h2{ //captions
+        font-size: 160%;
+    }
+    h3{ //dates
+        font-size: 120%;
+    }
+    #subtitle{
+        font-size: 140%;
+    }
+    .description{
+        font-size: 100%;
+        margin-top: 2%;
+    }
+    .iconDescription{
+        font-size: 100%;
+        margin-top: 3%;
+    }
+}
+@media screen and (max-width: 400px){
+    .bottomAnchor{
+        top: -2px;
+    }
+    .topAnchor{
+        bottom: -2px;
+    }
+    h1{
+        font-size: 170%;
+    }
+    h2{ //captions
+        font-size: 130%;
+    }
+    h3{ //dates
+        font-size: 110%;
+        margin: 2% 0% 2% 0%;
+    }
+    #subtitle{
+        font-size: 130%;
+    }
+    .description{
+        font-size: 90%;
+    }
+    .iconDescription{
+        font-size: 90%;
+    }
+
+}

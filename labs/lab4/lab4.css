@@ -1,0 +1,106 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1A1515;
+    color: white;
+    font-size: 1.3vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    padding: 3% 3% 3% 0%;
+    margin-right: 20%;
+}
+h1, h2, h3{
+    font-weight: 700;
+}
+h1{
+    font-size: 2vw;
+}
+h2{
+    font-size: 3vw;
+    border-bottom: 2px solid #4C4848;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+}
+p{
+    margin-bottom: 2%;
+    line-height: 1.2em;
+}
+input{
+    background-color: #1A1515;
+    color: white;
+    border: 2px solid #1AAA4A;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    padding: 1%;
+}
+.button{
+    background-color: #1AAA4A;
+    color: #1A1515;
+    border: 2px solid #1AAA4A;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    padding: 1%;
+    margin-left: 1%;
+    font-weight: 500;
+}
+.button:hover{
+    background-color: #1CD760;
+    border: 2px solid #1CD760;
+}
+.playlistContainer{
+    border-top: 2px solid #4C4848;
+}
+#playlistNameContainer{
+    margin: 2% 0% 2% 0%;
+    font-size: 2vw;
+}
+#artistAdder{
+    margin-left: 1%;
+}
+div{
+    margin-bottom: 2%;
+}
+li{
+    max-width: 100%;
+    padding: 1%;
+    position: relative;
+    border-top: 1px solid #4C4848;
+    border-bottom: 1px solid #4C4848;
+    z-index: 5;
+}
+.delete, .heart{
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+    top: 0;
+}
+.delete{
+    right: 0;
+    padding: 1% 1.2% 1% 1.2%;
+    z-index: 7;
+}
+.heart{
+    right: 4%;
+    padding: 1%;
+    z-index: 10;
+}
+.favorite{
+    background-color:  #1CD760;
+}
+.heart:hover{
+    background-color: #1CD760;
+}
+.delete:hover{
+    background-color: red;
+}
+img{
+    max-width: 70%;
+    margin-top: 5%;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nate's Front-End Development Portal</title>
+    <link href="https://fonts.googleapis.com/css?family=Manjari:100,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="portal.css">
+</head>
+<body>
+    <nav>
+        <a href="#firstPage" id="homeLink"><img id="homeIcon" src="img/home.png" alt="">Home</a>
+        <a href="#labs" id="labLink"><img id="labIcon" src="img/labs.png" alt="">Labs</a>
+        <a href="#projects" id="projectLink"><img id="projectIcon" src="img/projects.png" alt="">Projects</a>
+        <a href="https://natebennett1.wordpress.com/" target="_blank" id="journalLink"><img id="journalIcon" src="img/journal.png" alt="">Journal</a>
+        <a href="#lastPage" id="beardLink"><img id="beardIcon" src="img/beard.png" alt="">About Me</a>
+    </nav>
+    <section id="firstPage">
+        <header>
+            <h1 id="mainTitle">NATE BENNETT</h1>
+            <h1 id="subtitle">Front-End Web Development</h1>
+        </header>
+        <img id="firstLayerBg" class="pic" src="img/firstLayer.png" alt="background mountain">
+    </section>
+    <main>
+        <!-- To add a new lab: draw new icon, vectorize it in .ai file with grey color, color blue version, export to img file w 150ppi, name them lab#.png and lab#Active.png,
+        go into HTML and update links and ids, go into Javascript and create new event listeners to switch image when clicked on,
+        update link URL, and publish to creative server -->
+        <div id="secondPage">
+            <div id="endOfFirstPage"></div>
+            <section id="labs" class="workSection">
+                <h2 class="smallTitle">Labs</h2>
+                <div class="gridContainer">
+                    <a href="labs/lab1/index.html" target="_blank" id="lab1Link">
+                        <h3>Lab 1</h3>
+                        <img id="lab1Icon" class="workImg pic" src="img/lab1.png" alt="Lab 1 Icon">
+                    </a>
+                    <a href="labs/lab2/index.html" id="lab2Link">
+                        <h3>Lab 2</h3>
+                        <img id="lab2Icon" class="workImg pic" src="img/lab2.png" alt="Lab 2 Icon">
+                    </a>
+                    <a href="labs/lab3/index.html" id="lab3Link">
+                        <h3>Lab 3</h3>
+                        <img id="lab3Icon" class="workImg pic" src="img/lab3.png" alt="Lab 3 Icon">
+                    </a>
+                    <a href="labs/lab4/index.html" id="lab4Link">
+                        <h3>Lab 4</h3>
+                        <img id="lab4Icon" class="workImg pic" src="img/lab4.png" alt="Lab 4 Icon">
+                    </a>
+                    <a href="labs/lab5/index.html" id="lab5Link">
+                        <h3>Lab 5</h3>
+                        <img id="lab5Icon" class="workImg pic" src="img/lab5.png" alt="Lab 5 Icon">
+                    </a>
+                    <a href="labs/lab6/index.html" id="lab6Link">
+                        <h3>Lab 6</h3>
+                        <img id="lab6Icon" class="workImg pic" src="img/lab6.png" alt="Lab 6 Icon">
+                    </a>
+                    <a href="labs/lab7/react-build/index.html" id="lab7Link">
+                        <h3>Lab 7</h3>
+                        <img id="lab7Icon" class="workImg pic" src="img/lab7.png" alt="Lab 7 Icon">
+                    </a>
+                    <a href="labs/lab7files/" id="lab7filesLink">
+                        <h3>Lab 7 Source Files</h3>
+                        <img id="lab7filesIcon" class="workImg pic" src="img/lab7.png" alt="Lab 7 Icon">
+                    </a>
+                </div>
+            </section>
+            <div id="endOfSecondPage"></div>
+            <img id="secondLayerBg" class="pic" src="img/secondLayer.png" alt="background mountain">
+        </div>
+        <div id="thirdPage">
+            <section id="projects" class="workSection">
+                <h2 class="smallTitle">Projects</h2>
+                <div class="gridContainer">
+                    <a href="projects/midtermProject/index.html" target="_blank" id="midtermLink">
+                        <h3>Midterm</h3>
+                        <img id="midtermIcon" class="workImg pic" src="img/lab1.png" alt="Midterm Icon">
+                    </a>
+                    <a href="projects/project1/index.html" target="_blank" id="project1Link">
+                        <h3>Project 1</h3>
+                        <img id="project1Icon" class="workImg pic" src="img/project1.png" alt="Project 1 Icon">
+                    </a>
+                    <a href="projects/project2/react-build" target="_blank" id="project2Link">
+                        <h3>Project 2</h3>
+                        <img id="project2Icon" class="workImg pic" src="img/project2.png" alt="Project 2 Icon">
+                    </a> 
+                    <a href="projects/finalProject/index.html" target="_blank" id="finalLink">
+                        <h3>Final</h3>
+                        <img id="finalIcon" class="workImg pic" src="img/final.png" alt="Final Icon">
+                    </a>
+                </div>
+            </section>
+            <img id="thirdLayerBg" class="pic" src="img/thirdLayer.png" alt="background mountain">
+        </div>
+    </main>
+    <section id="lastPage">
+        <footer>
+            <h2 class="smallTitle">About Me</h2>
+            <div class="aboutMeSection">
+                <img id="aboutMePic" class="pic" src="img/me.png" alt="Nate Bennett">
+                <div id="textContainer">
+                    <p>I'm a fourth-year student in the engineering school at the University of Colorado Boulder. My major is Technology, Arts and Media.</p><br>
+                    <p>Basically, that means I spend a lot of my time thinking about how to make things that work well, look beautiful, and (hopefully!) cause you to think. I love great people, great design, the outdoors, and music of all kinds.</p><br>
+                    <p>Thanks for visiting my front-end web development portal!</p>
+                    <!-- Can un-comment this to add links in the future <p>Depending on what you want to learn more about me, click on the links below or contact me!</p> -->
+                </div>
+            </div>
+        </footer>
+        <img id="fourthLayerBg" class="pic" src="img/lastLayer.png" alt="background mountain">
+    </section>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="portal.js"></script>
+</body>
+</html>

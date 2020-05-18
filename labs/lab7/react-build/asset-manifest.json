@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/~nabe1680/fwd/labs/lab7/react-build/static/css/main.b100e6da.chunk.css",
+    "main.js": "/~nabe1680/fwd/labs/lab7/react-build/static/js/main.4efa1fcd.chunk.js",
+    "main.js.map": "/~nabe1680/fwd/labs/lab7/react-build/static/js/main.4efa1fcd.chunk.js.map",
+    "runtime-main.js": "/~nabe1680/fwd/labs/lab7/react-build/static/js/runtime-main.3ae8dd95.js",
+    "runtime-main.js.map": "/~nabe1680/fwd/labs/lab7/react-build/static/js/runtime-main.3ae8dd95.js.map",
+    "static/js/2.460cbaad.chunk.js": "/~nabe1680/fwd/labs/lab7/react-build/static/js/2.460cbaad.chunk.js",
+    "static/js/2.460cbaad.chunk.js.map": "/~nabe1680/fwd/labs/lab7/react-build/static/js/2.460cbaad.chunk.js.map",
+    "index.html": "/~nabe1680/fwd/labs/lab7/react-build/index.html",
+    "precache-manifest.25845f54e8d46157255aff70705247ab.js": "/~nabe1680/fwd/labs/lab7/react-build/precache-manifest.25845f54e8d46157255aff70705247ab.js",
+    "service-worker.js": "/~nabe1680/fwd/labs/lab7/react-build/service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "/~nabe1680/fwd/labs/lab7/react-build/static/css/main.b100e6da.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3ae8dd95.js",
+    "static/js/2.460cbaad.chunk.js",
+    "static/css/main.b100e6da.chunk.css",
+    "static/js/main.4efa1fcd.chunk.js"
+  ]
+}

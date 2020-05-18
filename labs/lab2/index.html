@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab 2</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../reset.css">
+    <link rel="stylesheet" href="lab2.css">
+</head>
+<body>
+    <h1>Radical Date Planner!</h1>
+    <p>Pick some things and you'll have a fab date idea. Now you just need to get that special someone on board!</p>
+    <form>
+        <h2>Someone You'd Like to Take on a Date:</h2>
+        <input class="bottomMargin" type="text" id="name" placeholder="Name">
+        <h2>What Really Gets The Spice Sizzling?</h2>
+        <select id="idea" class="bottomMargin">
+            <option value="none">Choose one</option>
+            <option value="dinner">A nice romantic dinner, complete with wine and serenade</option>
+            <option value="skydiving">An adrenaline-fueled skydiving session on a bright sunny day</option>
+            <option value="getaway">An elaborate weekend getaway to another country, somewhere exotic and wild</option>
+            <option value="picnic">A cute picnic in the park, with cheese, crackers and jam</option>
+            <option value="casual">Nothing too fancy, just dinner in the neighborhood and a fun movie afterward</option>
+        </select>
+        <fieldset>
+            <h2>Which of the Following Do You Have?</h2>
+            <div class="group">
+                <div>
+                    <input type="checkbox" value="car" id="car">
+                    <label for="car">A car</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="friends" id="friends">
+                    <label for="friends">Friends</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="writing" id="writing">
+                    <label for="writing">Writing Skills</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="music" id="music">
+                    <label for="music">Music Skills</label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <h2>What's Your Budget?</h2>
+            <div class="group">
+                <div>
+                    <input type="radio" value="low" name="budget" id="low">
+                    <label for="low">Not a lot</label>
+                </div>
+                <div>
+                    <input type="radio" value="medium" name="budget" id="medium">
+                    <label for="medium">I'm no Bill Gates but I can spend some cash</label>
+                </div>
+                <div>
+                    <input type="radio" value="high" name="budget" id="high">
+                    <label for="high">I got stacks to spend, let's gooooooo!</label>
+                </div>
+            </div>
+        </fieldset>
+        <button type="button" id="enter">Plan My Date!</button>
+    </form>
+    <textarea name="output" id="output" cols="50" rows="10"></textarea>
+    <script src="lab2.js"></script>
+</body>
+</html>

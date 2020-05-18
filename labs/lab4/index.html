@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab 4</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../reset.css">
+    <link rel="stylesheet" href="lab4.css">
+</head>
+<body>
+    <section>
+        <img src="spotify.jpg" alt="Spotify logo">
+        <h1>Playlistify</h1>
+    </section>
+    <main>
+        <h2>Useless Playlist Maker</h2>
+        <p>Make a useless playlist! There is no rational reason for adding songs to this playlist since you can't play them, but try it anyway!</p>
+        <div>
+            <input type="text" id="playlistAdder" placeholder="Playlist Title"><span class="button" id="nameButton">Apply name</span>
+        </div>
+        <div>
+            <input type="text" id="songAdder" placeholder="Song Title"><input id="artistAdder" type="text" placeholder="Artist"><span class="button" id="addButton">Add Song</span>
+        </div>
+        <div class="playlistContainer">
+            <h3 id="playlistNameContainer"></h3>
+            <ul id="playlist"></ul>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <script src="lab4.js"></script>
+</body>
+</html>

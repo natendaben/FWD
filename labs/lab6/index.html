@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../reset.css">
+    <link rel="stylesheet" href="lab6.css">
+    <title>Lab 6</title>
+</head>
+<body>
+    <div class="orderForm">
+        <img src="icecream.png" alt="Ice Cream">
+        <h1>Order Your Ice Cream Now!</h1>
+        <form>
+            <h2>Your name:</h2>
+            <input type="text" id="name">
+            <h2>Select flavor:</h2>
+            <select name="flavor" id="flavor">
+                <option value="Chocolate">Chocolate</option>
+                <option value="Vanilla">Vanilla</option>
+                <option value="Strawberry">Strawberry</option>
+                <option value="Mint Chocolate Chip">Mint Chocolate Chip</option>
+                <option value="Birthday Cake">Birthday Cake</option>
+            </select>
+            <h2>Type of cone:</h2>
+            <select name="cone" id="cone">
+                <option value="Waffle Cone">Waffle Cone</option>
+                <option value="Sugar Cone">Sugar Cone</option>
+                <option value="Cup">Cup</option>
+                <option value="Chocolate-Dipped Waffle Cone">Chocolate-Dipped Waffle Cone</option>
+            </select>
+            <div>
+                <button type="button" id="submitOrder">Get that ice cream to my face!</button>
+            </div>
+    </div>
+    <div class="history">
+        <h1>Order History</h1>
+        <div id="captions"><div class="oName">Name</div><div class="oFlavor">Flavor</div><div class="oConeType">Cone Type</div></div>
+        <div id="orderHistory"></div>
+    </div>
+    </form>
+    <!-- Set up Firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDtLBrEg9zNQpcPSYAGx6Gj8I0-7233jo4",
+            authDomain: "icecream-52a00.firebaseapp.com",
+            databaseURL: "https://icecream-52a00.firebaseio.com",
+            projectId: "icecream-52a00",
+            storageBucket: "icecream-52a00.appspot.com",
+            messagingSenderId: "290190344585",
+            appId: "1:290190344585:web:15c43ef2a25f5ee4d1a158",
+            measurementId: "G-33GF20BH3N"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <script src="lab6.js"></script>
+</body>
+</html>

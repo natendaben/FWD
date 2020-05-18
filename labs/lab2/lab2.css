@@ -1,0 +1,43 @@
+body, form, fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Noto Serif', serif;
+}
+
+body{
+    background-color: #8afff7;
+}
+h1, h2{
+    color: darkmagenta;
+}
+h1{
+    font-size: 200%;
+    margin: 2% 0% 2% 0%;
+}
+h2{
+    font-size: 140%;
+    margin: 2% 0% 2% 0%;
+
+}
+p{
+    margin-bottom: 2%;
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.5em;
+}
+#enter{
+    margin: 5%;
+    padding: 1%;
+    font-size: 110%;
+}
+.bottomMargin, fieldset{
+    margin-bottom: 3%;
+}
+textarea{
+    font-family: 'Noto Serif', serif;
+    margin-bottom: 5%;
+}
